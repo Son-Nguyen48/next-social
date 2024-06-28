@@ -42,10 +42,12 @@ const SponsoredAds = ({ size }: { size: 'sm' | 'md' | 'lg' }) => {
                     />
                     <p className='text-blue-400'>BigChef Lounge</p>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Veniam architecto ducimus beatae labore recusandae deserunt
-                    esse natus et explicabo fuga?
+                <p className={size === 'sm' ? 'text-xs' : 'text-sm'}>
+                    {size === 'sm'
+                        ? 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+                        : size === 'md'
+                        ? 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Veniam architecto ducimus beatae'
+                        : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Veniam architecto ducimus beatae labore recusandae deseruntesse natus et explicabo fuga'}
                 </p>
                 <button className='w-full text-center p-2 rounded-lg bg-slate-100'>
                     Learn More
