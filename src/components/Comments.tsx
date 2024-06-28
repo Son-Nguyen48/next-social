@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 
 const Comments = () => {
     return (
@@ -55,7 +54,7 @@ const Comments = () => {
                                     className='h-5 w-5 cursor-pointer'
                                 />
                                 <span className='text-gray-300'>|</span>
-                                <span className='text-gray-500'>
+                                <span className='text-gray-500 flex gap-1'>
                                     123
                                     <span className='hidden md:inline'>
                                         {' '}
@@ -76,7 +75,7 @@ const Comments = () => {
                                     className='h-5 w-5 cursor-pointer'
                                 />
                                 <span className='text-gray-300'>|</span>
-                                <span className='text-gray-500'>
+                                <span className='text-gray-500 flex gap-1'>
                                     12
                                     <span className='hidden md:inline'>
                                         {' '}
@@ -127,7 +126,7 @@ const Comments = () => {
                                     className='h-5 w-5 cursor-pointer'
                                 />
                                 <span className='text-gray-300'>|</span>
-                                <span className='text-gray-500'>
+                                <span className='text-gray-500 flex gap-1'>
                                     123
                                     <span className='hidden md:inline'>
                                         {' '}
@@ -148,7 +147,7 @@ const Comments = () => {
                                     className='h-5 w-5 cursor-pointer'
                                 />
                                 <span className='text-gray-300'>|</span>
-                                <span className='text-gray-500'>
+                                <span className='text-gray-500 flex gap-1'>
                                     123
                                     <span className='hidden md:inline'>
                                         {' '}

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import React from 'react'
 import Comments from './Comments'
+import Link from 'next/link'
 
 const Post = () => {
     return (
@@ -8,13 +8,15 @@ const Post = () => {
             {/* USER  */}
             <div className='flex items-center justify-between'>
                 <div className='flex items-center gap-4'>
-                    <Image
-                        src='https://cdn.i-scmp.com/sites/default/files/styles/768x768/public/d8/images/canvas/2024/01/23/42cab7c4-d5a3-4a6f-ae18-d56111c973cb_cd03545b.jpg?itok=S6nAv316&v=1705986486'
-                        alt='Profile'
-                        height={40}
-                        width={40}
-                        className='h-10 w-10 rounded-full object-cover cursor-pointer'
-                    />
+                    <Link href='/profile/123'>
+                        <Image
+                            src='https://cdn.i-scmp.com/sites/default/files/styles/768x768/public/d8/images/canvas/2024/01/23/42cab7c4-d5a3-4a6f-ae18-d56111c973cb_cd03545b.jpg?itok=S6nAv316&v=1705986486'
+                            alt='Profile'
+                            height={40}
+                            width={40}
+                            className='h-10 w-10 rounded-full object-cover cursor-pointer'
+                        />
+                    </Link>
                     <span>Shin Hye Sun</span>
                 </div>
                 <Image
@@ -55,7 +57,7 @@ const Post = () => {
                             className='h-5 w-5 cursor-pointer'
                         />
                         <span className='text-gray-300'>|</span>
-                        <span className='text-gray-500'>
+                        <span className='text-gray-500 flex gap-1'>
                             123<span className='hidden md:inline'> Likes</span>
                         </span>
                     </div>
@@ -68,7 +70,7 @@ const Post = () => {
                             className='h-5 w-5 cursor-pointer'
                         />
                         <span className='text-gray-300'>|</span>
-                        <span className='text-gray-500'>
+                        <span className='text-gray-500 flex gap-1'>
                             123
                             <span className='hidden md:inline'> Comments</span>
                         </span>
@@ -84,7 +86,7 @@ const Post = () => {
                             className='h-5 w-5 cursor-pointer'
                         />
                         <span className='text-gray-300'>|</span>
-                        <span className='text-gray-500'>
+                        <span className='text-gray-500 flex gap-1'>
                             123
                             <span className='hidden md:inline'> Shares</span>
                         </span>
